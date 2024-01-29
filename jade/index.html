@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jade</title>
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="app">
+    <header class="header">
+      <h1 class='header-title'>Money manager app</h1>
+    </header>
+    <div class="app__wrapper">
+      <aside class="sidebar">
+        <nav class="sideabar-nav">
+          <ul class="sideabar-nav__links">
+            <li class='tab-button tab-button_active' id='tab-button-expense'>
+              <div class="nav-link">Expense</div>
+            </li>
+            <li class='tab-button' id='tab-button-convert'>
+              <div class="nav-link">Convert</div>
+            </li>
+            <li class='tab-button' id='tab-button-home'>
+              <div class="nav-link">Home</div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main" id='main'>
+        <div class="expense" id='expense' data-active="active-tab">
+          <div class="expense-container">
+            <div class="expense-content" id='expense-content'>
+              <div class="expense-field">
+                <div class="expense-field__info">№</div>
+                <div class="expense-field__info">Category</div>
+                <div class="expense-field__info">Price </div>
+                <div class="expense-field__info expense-field__info-date">Date</div>
+                <div class="expense-field__info expense-field__button_description">Description</div>
+                <button class="expense-field__button expense-field__button_filter">Filter</button>
+                <div class="expense-field__info expense-field__info-currency">usd</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="note none" id='form'>
+          <div class="note-container">
+            <form action="GET" class="note-form">
+              <select class='note-form__input note-form__input_category' name="category" id="note-input" data-id="input-category" placeholder='Category' required>
+                <option class='note-form__input-option' value disabled selected hidden>Category</option>
+                <option class='note-form__input-option' value="product">Product</option>
+                <option class='note-form__input-option' value="home">Home</option>
+                <option class='note-form__input-option' value="fun">Fun</option>
+                <option class='note-form__input-option' value="other">Other</option>
+              </select>
+              <input min='1' type="number" class='note-form__input note-form__input_sum' id='note-input' data-id="input-value" autocomplete='off' placeholder='Price' required>
+              <input type="datetime-local" class='note-form__input note-form__input_date' id='note-input' data-id="input-date" required>
+              <textarea resize='none' class='note-form__input note-form__input_txt' name="note-input" id="note-input" data-id="input-description" cols="25" rows="2" maxlength='20'></textarea>
+              <input class='note-form__submit' type="submit" id='input-submit' value='OKEY' required>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="put" id='put'>
+      <div class="put__txt">+</div>
+    </div>
+    <div class="overlay none" id='overlay'></div>
+  </div>
+
+  <div class="filter none" id='filter'>
+    <div class="filter-container">
+      <div class="filter__content">
+        <div class="value">
+          <h2 class="value__title">Price</h2>
+          <div class="value__wrapper">
+            <button class="value__button" data-value="low">Low to High</button>
+            <button class="value__button" data-value="high">High to Low</button>
+          </div>
+        </div>
+        <div class="category">
+          <h2 class="category__title">Category</h2>
+          <div class="category__wrapper">
+            <button class="category__button" data-category="product">product</button>
+            <button class="category__button" data-category="home">home</button>
+            <button class="category__button" data-category="fun">fun</button>
+            <button class="category__button" data-category="other">other</button>
+          </div>
+        </div>
+        <div class="default">
+          <button class="default__button">default</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="change none" id='change'>
+    <div class="change__container">
+      <form class='change__form' action="GET">
+        <div class='change__close'>x</div>
+        <input class='change__input' type="number" min='1' required>
+        <input class='change__submit' type="submit" name="change" value='change'>
+      </form>
+    </div>
+  </div>
+
+  <script src="src/js/index.js"></script>
+  <script src="src/js/variables.js"></script>
+  <script src="src/js/switcher.js"></script>
+  <script src="src/js/expenses.js"></script>
+  <script src="src/js/convert.js"></script>
+  <script src="src/js/home.js"></script>
+</body>
+
+</html>

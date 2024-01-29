@@ -1,0 +1,307 @@
+.profile {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.aside {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 55%, rgba(255, 255, 255, 1) 90%);
+}
+
+.aside.aside-sign-up {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(181, 181, 181, 1) 30%, rgba(181, 181, 181, 1) 70%, rgba(255, 255, 255, 1) 90%);
+}
+
+.sign-in-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 85%;
+}
+
+.sign-in-content {
+  margin-left: 150px;
+  padding: 30px 60px 0;
+  width: 100%;
+}
+
+.sign-in__wrap {
+  width: 100%;
+  max-width: 416px;
+}
+
+.sign-in__title {
+  font-size: 26px;
+  font-family: var(--font-regular);
+  margin-bottom: 40px;
+}
+
+.sign-in-google__button {
+  width: 100%;
+  max-width: 416px;
+  height: 56px;
+  border: 1px solid rgb(0%, 0%, 0%, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-in-google__button span {
+  font-size: 14px;
+  font-family: var(--font-medium);
+}
+
+.sign-in-google__hr {
+  height: 1px;
+  margin: 30px 0;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  background-color: #e7e7e9;
+  color: #6e6d7a;
+  text-align: center;
+}
+
+.sign-in-google__hr::after {
+  content: "or sign in with email";
+  display: inline-block;
+  position: relative;
+  top: -7px;
+  padding: 0 16px;
+  background: #fff;
+  font-size: 14px;
+  font-family: var(--font-light);
+}
+
+.sign-in__form-fields fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  border: none;
+}
+
+.sign-in__form-fields fieldset label {
+  font-size: 16px;
+  font-family: var(--font-medium);
+  margin: 14px 0 4px;
+}
+
+.sign-in__form-fields fieldset input {
+  padding: 18px 20px;
+  border: 2px solid rgb(0%, 0%, 0%, 0.2);
+  border-radius: 10px;
+}
+
+.sign-in__form-fields fieldset input:focus {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.sign-in__form-fields fieldset .password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-in__form-fields fieldset .password span {
+  font-size: 14px;
+  font-family: var(--font-light);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sign-in__button {
+  width: 100%;
+  height: 56px;
+  margin-top: 20px;
+  background: #000;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--font-medium);
+  transition: .2s linear;
+}
+
+.sign-in__button:hover {
+  background: rgb(0%, 0%, 0%, 0.8);
+  transition: .2s linear;
+}
+
+.link-to-signUp {
+  font-size: 16px;
+  font-family: var(--font-light);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.link-to-signUp span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* .sign-up */
+
+.sign-up {
+  margin: 10px 0;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 85%;
+}
+
+.sign-up-content {
+  margin-left: 150px;
+  padding: 30px 60px 0;
+  width: 100%;
+}
+
+.sign-up-wrap {
+  width: 100%;
+  max-width: 416px;
+}
+
+.sign-up__title {
+  font-size: 26px;
+  font-family: var(--font-regular);
+  margin-bottom: 40px;
+}
+
+.sign-up-google__button {
+  width: 100%;
+  max-width: 416px;
+  height: 56px;
+  border: 1px solid rgb(0%, 0%, 0%, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #0d0c22;
+  color: #fff;
+  transition: .2s;
+}
+
+.sign-up-google__button:hover {
+  transition: .2s;
+  background: rgb(5%, 5%, 13%, .8);
+}
+
+.sign-up-google__button span {
+  font-size: 14px;
+  font-family: var(--font-medium);
+}
+
+.sign-up-google__hr {
+  height: 1px;
+  margin: 30px 0;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  background-color: #e7e7e9;
+  text-align: center;
+}
+
+.sign-up-google__hr::after {
+  content: "or";
+  display: inline-block;
+  position: relative;
+  top: -7px;
+  padding: 0 16px;
+  background: #fff;
+  font-size: 14px;
+  font-family: var(--font-light);
+}
+
+.sign-up-email__button {
+  width: 100%;
+  max-width: 416px;
+  height: 56px;
+  border: 1px solid rgb(0%, 0%, 0%, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: .2s;
+  margin-bottom: 40px;
+}
+
+.sign-up-email__button span {
+  font-size: 14px;
+  font-family: var(--font-medium);
+}
+
+.sign-up__terms {
+  line-height: 18px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: var(--font-light);
+  text-align: center;
+}
+
+.sign-up__terms .terms {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-to-signIn {
+  font-size: 15px;
+  font-family: var(--font-light);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.link-to-signIn span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    display: none;
+  }
+
+
+  .sign-in-content {
+    margin-left: 0;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-up-content {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .sign-in-content {
+    padding: 0 30px;
+  }
+
+  .sign-up-wrap {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sign-up-wrap {
+    padding: 0 50px;
+  }
+}

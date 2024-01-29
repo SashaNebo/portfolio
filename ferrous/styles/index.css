@@ -1,0 +1,26 @@
+@import url("./blocks/header.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/main.css");
+@import url("./blocks/pagination.css");
+@import url("./blocks/product.css");
+@import url("./blocks/modal.css");
+@import url("./blocks/profile.css");
+@import url("./blocks/wishlist.css");
+@import url("./blocks/bag.css");
+@import url("./blocks/checkout.css");
+
+:root {
+  --font-black: Rubik-Black, sans-serif;
+  --font-black-i: Rubik-BlackItalic, sans-serif;
+
+  --font-bold: Rubik-Bold, sans-serif;
+  --font-bold-i: Rubik-BoldItalic, sans-serif;
+
+  --font-regular: Rubik-Regular, sans-serif;
+
+  --font-medium: Rubik-Medium, sans-serif;
+  --font-medium-i: Rubik-MediumItalic, sans-serif;
+
+  --font-light: Rubik-Light, sans-serif;
+  --font-light-i: Rubik-LightItalic, sans-serif;
+}
