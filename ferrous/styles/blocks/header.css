@@ -1,0 +1,123 @@
+.header {
+  animation: moveTop 1s ease-in-out;
+}
+
+.header-item {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.header-item__title {
+  font-size: 11px;
+  font-family: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: .1em;
+  color: #fff;
+}
+
+.header-container {
+  padding: 0 40px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.header-top-el {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  column-gap: 5px;
+}
+
+.header-top-el li {
+  /* padding: 0 5px; */
+}
+
+.header-top-el .txt {
+  font-size: 15px;
+  font-family: var(--font-light);
+  color: #000;
+  text-decoration: underline;
+}
+
+.header-top-el svg {
+  width: 23px;
+  height: 15px;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 15px 15px;
+}
+
+.header-bottom-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  display: none;
+}
+
+.header-bottom-logo .adi-v1 {
+  width: 60px;
+  height: 40.84px;
+}
+
+.header-bottom-logo .adi-v2 {
+  width: 60px;
+  height: 40.84px;
+}
+
+.header-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+
+.header-bottom-nav__txt {
+  font-size: 16px;
+  font-family: var(--font-medium);
+  color: #000;
+  border-bottom: 3px solid rgba(0, 0, 255, 0);
+}
+
+.header-bottom-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-bottom-menu .menu-btn {
+  width: 100%;
+  max-width: 20%;
+  height: 40px;
+  border: 1px solid #000;
+  font-family: var(--font-medium);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header-bottom-menu .menu-btn:hover {
+  background: #000;
+  transition: .15s linear;
+  color: #fff;
+  transition: .15s linear;
+}
+
+.header-bottom-menu__item {
+  cursor: pointer;
+}
+
+.header-bottom-menu__item img {
+  width: 24px;
+  height: 27px;
+}

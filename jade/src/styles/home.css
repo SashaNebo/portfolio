@@ -1,0 +1,388 @@
+.home {
+  position: relative;
+  margin: 100px 0;
+}
+
+.home__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.home__content {
+  padding: 0 40px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data__block {
+  width: 30%;
+  min-height: 300px;
+  border: 1px solid #000;
+}
+
+.data__wrapper {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data__value {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.data__value span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+}
+
+.data__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 0 0 15px;
+  letter-spacing: 2px;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-left: 20px;
+}
+
+
+.balance__info {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .4);
+}
+
+/* Statistics */
+
+.statistics {
+  margin-top: 150px;
+}
+
+.statistics-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.statistics__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, .7);
+}
+
+.statistics__select {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.statistics__select:focus-visible {
+  outline: none;
+}
+
+.statistics__option {
+  font-weight: 400;
+}
+
+.chart {
+  margin-top: 50px;
+}
+
+.chart__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  animation: moveWidth .7s linear;
+}
+
+.chart__el {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.chart__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.chart_sum {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .4);
+  margin-left: 5px;
+}
+
+.chart__linear {
+  min-height: 60px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart__linear-product {
+  width: 0%;
+}
+
+.chart__linear-home {
+  width: 0%;
+}
+
+.chart__linear-fun {
+  width: 0%;
+}
+
+.chart__linear-other {
+  width: 0%;
+}
+
+.percent {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .5);
+}
+
+.chart__sum {
+  margin-top: 70px;
+  animation: moveLeft .7s linear;
+}
+
+.chart__sum-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.chart__sum-number {
+  font-family: Rubik, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}
+
+.chart__sum-currency {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Change */
+
+.change {
+  position: fixed;
+  width: 200%;
+  height: 100%;
+  top: 50%;
+  left: 55%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.change__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.change__form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.change__close {
+  width: fit-content;
+  background: #fff;
+  border: none;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+}
+
+.change__input {
+  font-family: Rubik, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 20px;
+  border: none;
+}
+
+.change__input:focus-visible {
+  outline: none;
+}
+
+.change__submit {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  width: 100%;
+  background: #fff;
+  border: none;
+}
+
+.currency {
+  position: absolute;
+  top: -3%;
+  right: 3%;
+  border: none;
+  box-shadow: 0 0 5px 3px rgba(34, 60, 80, 0.2);
+  padding: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.currency:focus-visible {
+  outline: none;
+}
+
+@keyframes moveWidth {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1250px) {
+  .data__block {
+    width: 40%;
+  }
+
+  .currency {
+    top: -6%;
+  }
+}
+
+@media (max-width: 950px) {
+  .data {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+
+  .data__block {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    min-height: auto;
+  }
+
+  .balance {
+    align-self: end;
+    margin-bottom: 10px;
+  }
+
+  .statistics-header {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .statistics__select {
+    margin-top: 10px;
+    width: 35%;
+  }
+
+  .change {
+    left: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .home {
+    margin-bottom: 200px;
+  }
+
+  .data__block {
+    width: 100%;
+  }
+
+  .data__value {
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+  }
+
+  .statistics__select {
+    width: 90%;
+  }
+
+  .change__input,
+  .change__submit {
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .change__close {
+    margin-right: 15%;
+  }
+}
