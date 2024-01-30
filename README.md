@@ -12,4 +12,4 @@
 
 [Grid Template](https://www.figma.com/file/5cHk5wbydDyjUNS8C3Et1p/%F0%9F%8E%A8-Creative-Website-Template-for-Figma-(Community)?type=design&mode=design&t=KlGchn021KFP0Z0b-0)
 
-![grid-t](https://github.com/SashaNebo/portfolio/assets/118817047/92e32518-26c0-4fcf-9514-7f4e6c29b707)
+![grid-t](https://github.com/SashaNebo/portfolio/assets/118817047/cc634114-0d47-4637-bb56-b62b94fc2a4c)
