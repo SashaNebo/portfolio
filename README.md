@@ -1,5 +1,5 @@
 # Agency
-[Agency Page](https://sashanebo.github.io/agency-main/)
+[Agency Page](https://sashanebo.github.io/agency/)
 
 [Agency Template](https://www.figma.com/file/xhnOXo4P626C7RPUVEhXnV/06-agency-minimal?type=design&mode=design&t=KlGchn021KFP0Z0b-0)
 
