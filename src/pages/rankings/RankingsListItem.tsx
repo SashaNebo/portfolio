@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 
 import cn from './Rankings.module.scss'
 import { RANKINGS } from '../../types/componentsTypes/rankingsTypes'
-import { toCollectVerifiedData } from '../../utils/collectVerifiedData'
 import { percentState } from './additional'
+import { toCollectVerifiedData } from '../../utils/collectVerifiedData.js'
+import { rootRoute } from '../../router/routes.js'
 
 type PROPS = {
   ranking: RANKINGS
@@ -22,7 +23,7 @@ const RankingsListItem: FC<PROPS> = ({ ranking, number }) => {
       <div className={cn['collection']}>
         <span className={[cn['collection__number'], 'text-space-body'].join(' ')}>{number}</span>
         <Link
-          to={`/collection/${address}`}
+          to={`${rootRoute}/collection/${address}`}
           className={[cn['collection__wrapper'], 'animation-scale'].join(' ')}>
           <div className={cn['collection__avatar']}>
             <img src={logoUrl} />

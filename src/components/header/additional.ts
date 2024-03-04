@@ -1,14 +1,16 @@
+import { rootRoute } from '../../router/routes'
+
 export const navLinks: { text: string; link: string }[] = [
   {
     text: 'Marketplace',
-    link: '/marketplace',
+    link: `${rootRoute}/marketplace`,
   },
   {
     text: 'Rankings',
-    link: '/rankings',
+    link: `${rootRoute}/rankings`,
   },
   {
     text: 'Connect a wallet',
-    link: '/connect',
+    link: `${rootRoute}/connect`,
   },
 ]

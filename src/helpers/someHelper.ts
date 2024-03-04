@@ -18,3 +18,34 @@ export const formattingNumbers = (n: number): string => {
 
   return '-'
 }
+
+export const modID = (id: string): string => {
+  if (!id) return '0xc0E3...B79C'
+
+  const l = id.substring(0, 6)
+  const r = id.substring(id.length - 4, id.length)
+
+  return l + '...' + r
+}
+
+type RANDOM_NUMBERS = (min: number, max: number, lot: number) => number[]
+
+export const getRandomNumbers: RANDOM_NUMBERS = (min, max, lot) => {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+
+  const r = () => Math.floor(Math.random() * (max - min) + min)
+  const a: number[] = []
+
+  type UNQUE_A = () => number[]
+  const uniqueA: UNQUE_A = () => {
+    const u = r()
+
+    !a.includes(u) && a.push(u)
+    return a.length === lot ? a : uniqueA()
+  }
+
+  return uniqueA()
+}
+
+export const defaultAddress = '0xBd3531dA5CF5857e7CfAA92426877b022e612cf8'

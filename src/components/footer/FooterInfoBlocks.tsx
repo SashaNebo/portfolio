@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import cn from './Footer.module.scss'
 import { spritePath } from '../../helpers/imgPath'
 import Button from '../UI/button/Button'
+import { rootRoute } from '../../router/routes'
 
 export const InfoBlockNFT: FC = () => {
   return (
@@ -42,13 +43,13 @@ export const InfoBlockExplore: FC = () => {
   return (
     <div className={cn['info-block']}>
       <h5 className='text-space-h5'>Explore</h5>
-      <Link to={'marketplace'} className={cn['info-block__link']}>
+      <Link to={`${rootRoute}/marketplace`} className={cn['info-block__link']}>
         Marketplace
       </Link>
-      <Link to={'rankings'} className={cn['info-block__link']}>
+      <Link to={`${rootRoute}/rankings`} className={cn['info-block__link']}>
         Rankings
       </Link>
-      <Link to={'connect-wallet'} className={cn['info-block__link']}>
+      <Link to={`${rootRoute}/connect`} className={cn['info-block__link']}>
         Connect a wallet
       </Link>
     </div>

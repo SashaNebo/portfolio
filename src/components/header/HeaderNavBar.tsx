@@ -19,12 +19,18 @@ const HeaderNavBar: FC = () => {
       <div className={clsx(cn['nav-bar__list'], open && cn['active'])}>
         {navLinks.map(({ link, text }) => (
           <li className='animation-scale' key={link}>
-            <Link to={link} className='nav-bar__list-link'>
+            <Link onClick={() => setOpen(false)} to={link} className='nav-bar__list-link'>
               {text}
             </Link>
           </li>
         ))}
-        <Button text='sign up' type='primary' size='md' className={cn['sign-up']} />
+        <Button
+          onClick={() => setOpen(false)}
+          text='sign up'
+          type='primary'
+          size='md'
+          className={cn['sign-up']}
+        />
       </div>
     </nav>
   )

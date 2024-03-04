@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 import cn from './TopCollections.module.scss'
 import TopCollectionsLoader from './TopCollectionsLoader.tsx'
@@ -8,10 +9,11 @@ import { PERIOD } from '../../types/apiTypes/raribleTypes.ts'
 import ErrorMessage from '../error/ErrorMessage.tsx'
 import TopCollectionsListItem from './TopCollectionsListItem.tsx'
 import Button from '../UI/button/Button.tsx'
-import { Link } from 'react-router-dom'
+import { rootRoute } from '../../router/routes.ts'
 
 const TopCollectionsList: FC = () => {
   const limit = window.innerWidth > 1280 ? 12 : 6
+
   const setting: SETTING_TC = {
     period: PERIOD.mounth,
     limit,
@@ -36,7 +38,7 @@ const TopCollectionsList: FC = () => {
       </div>
 
       {error && <ErrorMessage errorMessage={error} />}
-      <Link className={cn['top-collections__bottom-link']} to={'/rankings'}>
+      <Link className={cn['top-collections__bottom-link']} to={`${rootRoute}/rankings`}>
         <Button
           className={cn['top-collections__header-button']}
           type='secondary'

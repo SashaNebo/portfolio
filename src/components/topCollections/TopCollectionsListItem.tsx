@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 import cn from './TopCollections.module.scss'
 import { TOP_COLLECTIONS } from '../../types/componentsTypes/topCollectionsTypes'
-import { toCollectVerifiedData } from '../../utils/collectVerifiedData'
+import { toCollectVerifiedData } from '../../utils/collectVerifiedData.js'
+import { rootRoute } from '../../router/routes.js'
 
 type PROPS = {
   collection: TOP_COLLECTIONS
@@ -15,7 +16,7 @@ const TopCollectionsListItem: FC<PROPS> = ({ collection, number }) => {
     toCollectVerifiedData<TOP_COLLECTIONS>(collection)
 
   return (
-    <Link to={`/collection/${address}`}>
+    <Link to={`${rootRoute}/collection/${address}`}>
       <div className={[cn['collections__card'], 'animation-scale'].join(' ')}>
         <div className={cn['collections__number']}>
           <p className={cn['collections__number-el']}>{number}</p>

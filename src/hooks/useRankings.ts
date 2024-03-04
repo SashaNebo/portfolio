@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+
 import { OBSERVER, REF, RETURN_HOOK } from './types'
 import { RANKINGS, SETTING_RANKINGS } from '../types/componentsTypes/rankingsTypes'
 import { NFT_COLLECTIONS_VOLUME, VOLUME_RESULT } from '../types/apiTypes/raribleTypes'
@@ -24,6 +25,7 @@ const useRankings = (setting: SETTING_RANKINGS, trackedRef: REF): RETURN => {
 
   useEffect(() => {
     setRankings(() => [])
+    setError(() => '')
     setIsLoading(() => true)
 
     const timeout = setTimeout(async () => {
