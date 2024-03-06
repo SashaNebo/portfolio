@@ -13,7 +13,6 @@ const AppRouter: FC = () => {
     <Routes>
       <Route path={rootRoute} element={<AppWrapper />}>
         <Route index element={<Home />} />
-
         {wrappedRoutes.map(route => (
           <Route path={route.path} element={<route.component />} key={route.path} />
         ))}

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import cn from './NFT.module.scss'
@@ -13,6 +13,7 @@ import NotFound from '../../components/notFound/NotFound'
 
 const NftContent: FC<{ paramID: string }> = ({ paramID }) => {
   const [nft, isLoading, error] = useNFT(paramID)
+  useEffect(() => window.scroll(0, 0), [paramID])
 
   const {
     address,
