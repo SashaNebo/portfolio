@@ -32,7 +32,6 @@
 #### Stack: HTML5, CSS3
 #### Dev time: 3 days
 
----
 
  
 
